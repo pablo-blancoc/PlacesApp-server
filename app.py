@@ -1,4 +1,5 @@
 import parse as parse_server
+import one_signal
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from dotenv import dotenv_values
@@ -48,7 +49,7 @@ def test():
 
 
 @app.route('/push', methods=['GET'])
-def push():
+def notify():
     """
     Send a push notification to all users suscribed to the user sent with the place that was just posted by it
     """
@@ -68,13 +69,15 @@ def push():
     # Create toUsers list
     toUsers = []
     for sub in subs:
-        if sub is not None and len(sub) > 0:
+        if sub.toUser.OneSignal is not None and len(sub.toUser.OneSignal) > 0:
             toUsers.append(sub.toUser.OneSignal)
     
-    push(place=place.objectId, toUsers=toUsers, title=f"{str(user.name).capitalize()} has posted a new place", text="Click and see this amazing place!")
+    one_signal.push(place=place.objectId, toUsers=toUsers, title=f"{str(user.name).capitalize()} has posted a new place", text="Click and see this amazing place!")
+    
+    print(f"Sent {len(toUsers)} notifications!")
     
     return jsonify({"status": "ok"}), 200
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=int(SECRETS.get("PORT")))
+    app.run(debug=False, host='0.0.0.0', port=int(SECRETS.get("PORT")))
