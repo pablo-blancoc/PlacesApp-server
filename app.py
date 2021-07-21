@@ -62,8 +62,16 @@ def push():
     user = parse_server.get_user(objectId=userId)
     place = parse_server.get_place(objectId=placeId)
     
+    # Get subscribers to that user
     subs = parse_server.get_subscriptions(user=user)
     
+    # Create toUsers list
+    toUsers = []
+    for sub in subs:
+        if sub is not None and len(sub) > 0:
+            toUsers.append(sub.toUser.OneSignal)
+    
+    push(place=place.objectId, toUsers=toUsers, title=f"{str(user.name).capitalize()} has posted a new place", text="Click and see this amazing place!")
     
     return jsonify({"status": "ok"}), 200
 
