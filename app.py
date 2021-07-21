@@ -1,3 +1,4 @@
+import parse as parse_server
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from dotenv import dotenv_values
@@ -44,6 +45,27 @@ def test():
     Sanity test to confirm backend is working
     """
     return "Working!", 200
+
+
+@app.route('/push', methods=['GET'])
+def push():
+    """
+    Send a push notification to all users suscribed to the user sent with the place that was just posted by it
+    """
+    try:
+        userId = request.args["user"]
+        placeId = request.args["place"]
+    except KeyError:
+        return "Place and user need to be on request", 400
+    
+    # Get user and place from Parse
+    user = parse_server.get_user(objectId=userId)
+    place = parse_server.get_place(objectId=placeId)
+    
+    subs = parse_server.get_subscriptions(user=user)
+    
+    
+    return jsonify({"status": "ok"}), 200
 
 
 if __name__ == '__main__':
