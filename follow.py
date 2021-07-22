@@ -15,7 +15,7 @@ HEADERS = {
     "X-Parse-REST-API-Key": SECRETS.get("PARSE_REST_API_KEY"),
     "Content-Type": "application/json"
     }
-RELATIONS = {}
+RELATIONS = []
 
 
 def get_all_users():
