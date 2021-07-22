@@ -1,0 +1,2037 @@
+{
+    "drinks": [
+        {
+            "name": "Cantina La Fuente",
+            "description": "Good prices and a fun, and laid back, place to have a cold beer.",
+            "price": 2,
+            "address": "Calle Pino Suárez 78, Zona Centro, 44100 Guadalajara, Jal.",
+            "public": true,
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.677527,
+                "longitude": -103.345789
+            },
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndhcESIVJdndh"
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Restaurant Bar Martín",
+            "description": "Old timer cantina, very interesting characters. A very authentic experience but could fully recommend to foreigners, no safety issues, is just that they/you might feel not too comfortable.",
+            "price": 3,
+            "address": "Av. Cristóbal Colón 901, Moderna, 44190 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndh"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.662829,
+                "longitude": -103.353352
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Escutia",
+            "description": "Excelent bar, you can ask for a couple of local beers or any kind of drink, the music was the best!",
+            "price": 3,
+            "address": "Av. Chapultepec Sur 68, Col Americana, Lafayette, 44160",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndh"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.675056,
+                "longitude": -103.368824
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Bar Antillanos",
+            "description": "Un lugar increíble para pasar el rato con los amigos o la familia No discriminación así que cualquier entra Jugadas de dominó!!! Lugar bohemico (horario especial) Gran variedad de bebidas alcohólicas y no alcohólicas Ven a disfrutar",
+            "price": 1,
+            "address": "44100, C. Morelos 934, Zona Centro, 44100 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndh"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.676258,
+                "longitude": -103.358224
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "El deposito",
+            "description": "Good looking place, great selection of beer, atmosphere: check!! Great place overall, good food dates and take-out drinks.",
+            "price": 4,
+            "address": "Jardines del Bosque, 44520 Guadalajara, Jalisco",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndh"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.665868,
+                "longitude": -103.392834
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Estación Juárez",
+            "description": "Impecable el lugar, con buena ubicación, los alimentos calientes y ricos con buen ambiente tranquilo, el personal atento y con bonita vista en la terracita. Simplemente exelente!",
+            "price": 3,
+            "address": "Marcos Castellanos 134, Col Americana, Zona Centro, 44160 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndh"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.674111,
+                "longitude": -103.356535
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Bananas",
+            "description": "One of the best quality/price places in Guadalajara, waitress are really slow.",
+            "price": 2,
+            "address": "Av. Chapultepec Sur 330, Col Americana, Obrera, 44140 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndh"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.670903,
+                "longitude": -103.368682
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Bar Arandas",
+            "description": "No-frills outpost of a long-running Tex-Mex chain specializing in taco-truck fare.",
+            "price": 2,
+            "address": "Calle Federico Medrano 7, San Juan de Dios II, 44360 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndh"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.671373,
+                "longitude": -103.343746
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Rock It Chapultepec",
+            "description": "Honestly a cool bar, but I have to give it a bad rating, because I have gone there twice now, and both times the waitress (different ones each time) tried to charge me 25-30% tip in a fake receipt they put on top of the real one. When called out on it, they tried to claim it was 10% which a 7 year old could probably figure out is not true... so yeah, would be a cool place if the waitresses weren't running scams...",
+            "price": 3,
+            "address": "Av. Chapultepec Sur 389, Col Americana, Americana, 44140 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndh"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.670172,
+                "longitude": -103.368531
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Aloha Bar Chapultepec",
+            "description": "Love the service, has some flaws needs more waiters and a bit downside of the music need more variety of sound, the drinks were amazing and the company I have found old fiends that have been a mark in many ways in life, I enjoy the company and the business of my friends!! This is a great place right now due to COVID it’s a bit on the slow side but I actually love it a very nice and open place to drink and have fun with friends! Thanks!",
+            "price": 2,
+            "address": "Calle Vidrio 2086, Col Americana, Obrera, 44140 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndh"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.667633,
+                "longitude": -103.369068
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "El Gran Chavarin",
+            "description": "Es un lugar tranquilo donde puedes ir con tu pareja y disfrutar de tu bebida favorita",
+            "price": 4,
+            "address": "Calle Prisciliano Sánchez 443, Zona Centro, 44100 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndh"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.672793,
+                "longitude": -103.350544
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "The Terrace Bar",
+            "description": "Decided to give it a go, two Australian guys that like good food and ice cold beer. Well they do have ice cold beer, or this would be a 1 star review. Music was loud and I let that go, but after we got our very average food and finally a second round of beers things went down hill. The music got louder, and everyone around us got served. After 10 minuets trying to get someone’s attention for another round we gave up. Took another 10 minuets trying to get their attention away from their phones so we could get the bill and find somewhere else to have a cold beer. Won’t be back, and don’t recommend the food at all. With only 10 people in the place, service should be that slack.",
+            "price": 3,
+            "address": "Av Juárez 442, Zona Centro, 44100 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndh"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.675083,
+                "longitude": -103.349568
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Morelia's Bar",
+            "description": "Authentic cantina/saloon/dive bar. No english spoken here but very friendly people. Cheap beer.",
+            "price": 2,
+            "address": "Epigmenio González 1132, Mexicaltzingo, 44180 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndh"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.667338,
+                "longitude": -103.352318
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Bar Gil",
+            "description": "Good place to have a 'caguama'. Friendly staff.",
+            "price": 3,
+            "address": "Calle Prisciliano Sánchez 585, Zona Centro, 44100 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndh"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.672767,
+                "longitude": -103.352679
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "London Wings",
+            "description": "Truly evil & despicable place. I was robbed while I went to the bathroom - an old sweatshirt I left on my chair...the only warm article of clothing I had with me. Bartender would not help, only 7-8 people were there. There's a special place in hell for these trashy cretins.",
+            "price": 3,
+            "address": "Calle Manuel López Cotilla 649, Zona Centro, 44100 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "cESIVJdndh"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.674185,
+                "longitude": -103.353426
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        }
+    ],
+    "coffee": [
+        {
+            "name": "Cafetal 97",
+            "description": "Gastronomy and art in one place - What more can you ask? The delicious food selection and friendly English speaking servers set in a beautiful garden and gallery gives the ambiance of visiting a rich uncle in his tasteful hacienda in the middle of Guadalajara. I instantly fell in love with this place and have become quite the regular during my time in the city.",
+            "price": 3,
+            "address": "Calle José Guadalupe Zuno Hernández 1797, Col Americana, Americana, 44160 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklbxiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.670122,
+                "longitude": -103.364214
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "El Terrible Juan Café",
+            "description": "Relaxed cafe serving craft coffees, brunch & homemade bread, with a shaded outdoor courtyard.",
+            "price": 4,
+            "address": "Calle José Guadalupe Montenegro 1871, Col Americana, Americana, 44160 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.669366,
+                "longitude": -103.365858
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Amorosocafé",
+            "description": "The place is lovely and there's a lot of options. It's really chill with a nice vibe and the coffee is amazing, it's only a bit pricey but so very worth it.",
+            "price": 3,
+            "address": "Diagonal Golfo de Cortés 4139, Monraz, 44670 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.680706,
+                "longitude": -103.395128
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "The Coffee Legacy",
+            "description": "We love this place!!! The service is impeccable, the lattes are an experience with art, the venue is very industrial hip and the pancakes with ice cream and whipped cream is the best we have ever had. Better than any of the local pancake houses. They make a berry sauce that is chef worthy and berries are their thing. Go!!",
+            "price": 5,
+            "address": "Av. Chapultepec Sur # 165, Col Americana, Americana, 44160 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.673518,
+                "longitude": -103.368561
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Café Finca Riveroll",
+            "description": "Freshly baked in house bread, hot coffee and delicious food yummy",
+            "price": 2,
+            "address": "Coronilla 11, Zona Centro, 44100 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.676640,
+                "longitude": -103.352861
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "La Cafetería",
+            "description": "Traditional bites in a popular cafe offering a homey vibe, plus a vast terrace with leafy surrounds.",
+            "price": 2,
+            "address": "Libertad 1700, Col Americana, Americana, 44160 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.672122,
+                "longitude": -103.362758
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Matraz Café",
+            "description": "This is a superior coffee shop! The drinks are absolutely delicious and artfully done.",
+            "price": 2,
+            "address": "Buenos Aires 2679, Providencia, 44630 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.696538,
+                "longitude": -103.381769
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Café Providencia Chapultepec",
+            "description": "I really enjoyed Cafe Providencia! The latte   was great! I have also ordered chilaquiles, that were indeed amazing. I recommend this place if you want to try traditional Mexican food. They have quite a big choice of breakfasts.",
+            "price": 4,
+            "address": "Av. Chapultepec Sur 126, Col Americana, Lafayette, 44160 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.674268,
+                "longitude": -103.368757
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "RinTinTin Café",
+            "description": "Small place wih good coffee, bread and breakfast. Very original options, like chilaquiles with mole.",
+            "price": 3,
+            "address": "C. Morelos 1196, Col Americana, Zona Centro, 44100 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.676148,
+                "longitude": -103.363120
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Liberty Coffee",
+            "description": "I loved this restuarant.liberty cafe is good for family gatherings,or romantic dinners at night.if you love art this place has it too with exhibitions of paintings and sculptures.the food is good and the waiters are attentive.there are birds in cages outside and plants too.beautiful set up inside of art installations that you can view while you wait for your order to arrive.there is a big cow statue in-front of restuarant,you can't miss it.i was able to read a book outside in the afternoon.at night it gets pack with mostly couples out on dates and family or friend gatherings.there is a bar too.check this place out.you 'll love it.",
+            "price": 3,
+            "address": "Libertad 1939, Col Americana, Americana, 44160 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.672952,
+                "longitude": -103.367185
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "En Punto. Barra de Café",
+            "description": "Coffee isn't my style. Doesn't mean is bad though. The bread is pretty good and service is quite nice. Too many busses go through that area so I recommend sitting inside. I liked the music as well.",
+            "price": 2,
+            "address": "Calle Juan Ruiz de Alarcón 211, Col Americana, Obrera, 44140 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.671142,
+                "longitude": -103.376236
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "La Borra Del Café Minerva",
+            "description": "Just the right place to sit down and have a great cup of java. We stayed close by in the towers for a few days before heading out to Mexico City.",
+            "price": 2,
+            "address": "Av Vallarta Eje Poniente 3298-Local 1, Vallarta Nte., 44690 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.674620,
+                "longitude": -103.392483
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Fitzroy Espresso Bar",
+            "description": "The food is prepared with quality ingredients, and presented beautifully. The menu has a creative twist on many favourite dishes and the latte is amazing.  Note: no decaffeinated coffee available.",
+            "price": 4,
+            "address": "Calle Marsella 126, Col Americana, Lafayette, 44160 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.674150,
+                "longitude": -103.370561
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Café Madrid",
+            "description": "Great coffee. Great Madrid beef burger. Pleasant place to watch people passing by.",
+            "price": 2,
+            "address": "Av Juárez 264, Centro, 44100 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.675195,
+                "longitude": -103.346800
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Crema di Espresso",
+            "description": "A cozy and nicely decorated coffee shop. The place has a welcoming vibe and it's clear that the owner puts a lot of care into it. A well-made double espresso cost 29 pesos and was served in a beautiful ceramic cup. They accept credit cards.",
+            "price": 4,
+            "address": "Juan Manuel 1130, Zona Centro, 44100 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "xiaCOmzklb"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.678626,
+                "longitude": -103.360272
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        }
+    ],
+    "italian": [
+        {
+            "name": "La Trattoria de Guadalajara",
+            "description": "Rustic Mediterranean-style dining room with checkered tablecloths, specialising in pizza & pasta.",
+            "price": 4,
+            "address": "Av Niños Héroes 3051, Jardines del Bosque, 44520 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.666534,
+                "longitude": -103.390832
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "El Italiano",
+            "description": "Italian dishes like grilled steaks & seafood in an upscale setting with stylish decor, plus wine.",
+            "price": 3,
+            "address": "Diagonal Golfo de Cortés 4134, Monraz, 44670 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.680540,
+                "longitude": -103.394720
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Pomodoro Ristorante",
+            "description": "Rustic-look space with ceiling beams & a wood-fired pizza oven, also serving pastas & Italian wines.",
+            "price": 3,
+            "address": "Av Adolfo López Mateos Nte 145, Vallarta Nte., 44690 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.677288,
+                "longitude": -103.385612
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Ponzo Castellini",
+            "description": "The place is a lot bigger than it looks from the outside, we were surprised when we entered. I really enjoyed my visit.",
+            "price": 3,
+            "address": "Av Pablo Neruda 2924, Providencia 4a. Secc, 44630 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.698002,
+                "longitude": -103.385993
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "La Ciabatta",
+            "description": "Very good Italian food.  You can order from the menu, like in any restaurant, or order buffet style - which means they will bring you small portions of different things you pick from the menu, one at a time, until you are finished.  There is no standard buffet table, which is nice.",
+            "price": 2,
+            "address": "Calle Rayón 300, Col Americana, Americana, 44160 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.672242,
+                "longitude": -103.356885
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Antica Venezia",
+            "description": "The price is friendly and Italia food and service are also amazing. What can you expect about it.",
+            "price": 3,
+            "address": "Av Terranova S/N, Lomas de Providencia, 44647 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.691039,
+                "longitude": -103.386746
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "DaLucia Lasagna",
+            "description": "Each dish is delicious, the pasta is handmade and everything is fresh. The individual lasagna is the right measure and I love the cottage cheese pie because it is not cloying and you can savor every ingredient. It is advisable to order in advance. The place only has one table if you want to eat it there. The people who work there have always been friendly. And they also have a special menu for the Christmas season.",
+            "price": 5,
+            "address": "Av de Las Rosas 2917, Chapalita, 45040 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.658385,
+                "longitude": -103.395116
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Bardoino",
+            "description": "Delicious, Italian take out, no restaurant service. It has parking, you can reserve to pick up, good service.",
+            "price": 2,
+            "address": "Av. México 3177, Monraz, 44670 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.678681,
+                "longitude": -103.395660
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Restaurant Italia Mia",
+            "description": "Nice cannelloni, but not unforgettable, for my personal taste it needed a little bit of flavor (probably salt).  Salad good but i little bit musty.  Wine of the house tasty.   Excellent service though.",
+            "price": 4,
+            "address": "Calle Pedro Moreno 1595, Col Americana, Lafayette, 44160 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.666149,
+                "longitude": -103.404047
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Lasagna e Via",
+            "description": "Desde hace más de 15 años ofrecemos deliciosa lasagna para llevar. Con pasta hecha a mano y los mejores ingredientes, nuestra receta auténtica italiana te encantará.",
+            "price": 4,
+            "address": "Diagonal Golfo de Cortés 4182-4, Monraz, 44670 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.681626,
+                "longitude": -103.395905
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Rugantino",
+            "description": "Sleek, airy space with a terrace for pizza, pasta & Italian-style seafood dishes, plus cocktails.",
+            "price": 1,
+            "address": "Av Adolfo López Mateos Nte 330, Ladrón de Guevara, Ladron De Guevara, 44600 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.679950,
+                "longitude": -103.383618
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Verona, Cocina Italiana & Bar",
+            "description": "ON THIS OCCASION, the experience with the RED SALAD was not good. I was left to owe the STRAWBERRIES but the blackberries as well as the blueberries the fruits were past they were NOT FRESH AND When I was eating the LETTUCE I felt earth when I chewed it, it was NOT WASHED well. I hope that this message really reached the OWNER. I am interested in them improving AND TAKING CARE OF YOUR KITCHEN. I LIKE THE PLACE. REGARDS",
+            "price": 4,
+            "address": "Coronilla #6, Zona Centro, 44100 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.676556,
+                "longitude": -103.352851
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Firenze Mia",
+            "description": "Great food! authentic flavors, doesn't compare to any other Italian place I've tried here in GDL. My family loves the carbonara, and fettuccine Alfredo and the pizza was amazing highly recommend and great outdoor dining options",
+            "price": 3,
+            "address": "Calle Paseo de los Filósofos 1920, Jardines Alcalde, 44298 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.701543,
+                "longitude": -103.342411
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Aranchinos",
+            "description": "The aranchinis are a different, rich and interesting concept. The pastas are delicious! Excellent presentation and attention. Fresh water made at the moment and a variety of fruits. Widely recommended.",
+            "price": 4,
+            "address": "Calle Calderón de la Barca 119, Arcos Vallarta, 44130 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.672931,
+                "longitude": -103.378654
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Mascarpone",
+            "description": "Delicious Italian food, also they have a magnificent grilled burgers. Love their home made tomato sauce.",
+            "price": 3,
+            "address": "Rafael Martínez 2282, Jardines Alcalde, 44298 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "vXScNFQ7I1"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.707663,
+                "longitude": -103.336758
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        }
+    ],
+    "japanese": [
+        {
+            "name": "Mitsuru",
+            "description": "The rolls are tasty, the service is fast and the waiter very friendly. Accessible prices and have takeaway service. Cash only",
+            "price": 4,
+            "address": "Calle Coral 3219, Victoria, 45089 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.642311,
+                "longitude": -103.399488
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Little Tokyo",
+            "description": "Amazing and unique experience! The sushi we tried was really delicious, but the salmon with an orange-curry sauce blew our minds. The service was super friendly and they helped us with some special requests that we had. The atmosphere is also super calm and relaxing. All in all it is a super recommendable place, where we will soon come back to!",
+            "price": 4,
+            "address": "Calle Manuel López Cotilla 2009, Arcos Vallarta, 44130 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.673306,
+                "longitude": -103.378956
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Suntory",
+            "description": "Great Japanese cuisine and the service much better, the server really knows the menu,  iam a 5 star banquet server myself.and I got impressed ...I really recomend thi excellent Japanese rest whith the taste of mexico....",
+            "price": 3,
+            "address": "Planta Baja, Av. Chapultepec Nte. 15, Ladron De Guevara, 44600 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.676031,
+                "longitude": -103.368827
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Sayumi",
+            "description": "The food has good seasoning, a recommended place to eat deliciously. Most are with rice as a base but that's fine, everything is complemented.",
+            "price": 4,
+            "address": "José María Lozano 1037, Lomas de Independencia, 44240 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.684605,
+                "longitude": -103.325951
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Daiichiro",
+            "description": "Instead of answering badly to customers who come or ask your business, you should improve your food. I have better spelling than you. At the very least recognize that you must improve customer service. I support restaurants by ordering and I chose yours. Good to know how you think",
+            "price": 3,
+            "address": "C. Juan Álvarez 1318, Santa Teresita, 44600 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.684855,
+                "longitude": -103.364116
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Toyo",
+            "description": "The service is great, all the staff is on point. The prices in my opinion are too high. Imported beer is almost double the price as other places.",
+            "price": 4,
+            "address": "Juan Manuel 1473, Ladrón de Guevara, Americana, 44600 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.678766,
+                "longitude": -103.366746
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Suehiro",
+            "description": "Elegantly designed Japanese restaurant & garden known for sushi & hibachi-style cooking on a grill.",
+            "price": 4,
+            "address": "Av. de la Paz 1701, Col Americana, Americana, 44160 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.671108,
+                "longitude": -103.362919
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Hiroshi",
+            "description": "One of the best places to eat Japanese food. Great cooking and dishes. The sushi and the ribs are the best, you must at least try!",
+            "price": 3,
+            "address": "Av. de la Paz 2702, Arcos Vallarta, 44130 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.672373,
+                "longitude": -103.384839
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Panda Ninja Sushi",
+            "description": "Service super slow, we waited 50 minutes to be delivered to the place. The food, passed on pepper. The orders we expected were chicken with rice and vegetables as an accompaniment, they should specify that they are rice and vegetables with accompanying chicken (same case with the tempura). But as always, go try and issue your own opinion.",
+            "price": 4,
+            "address": "Sabiduría 6, Infonavit Estadio, 44307 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.714495,
+                "longitude": -103.318938
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Bikkuri Sushi",
+            "description": "A good option if you are in the area. The cost benefit ratio is very good. Their dishes are well seasoned and well presented. Regarding cleanliness and staff it leaves something to be desired. Not referring to what is wrong but to what can be improved.",
+            "price": 2,
+            "address": "7 de Enero Local 50, Atemajac del Valle, 44218 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.714081,
+                "longitude": -103.354847
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Tanoshii Neko",
+            "description": "Extremely slow service. They even completely forgot one of our orders. Terrible movie, with terrible echoing sound. It was easier to read the Spanish subtitles (not a strong Spanish speaker) than to understand the English speech.",
+            "price": 2,
+            "address": "Av Juárez 478, Centro, 44100 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.675093,
+                "longitude": -103.350094
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Irori",
+            "description": "This place is nice and clean,  I love the tempura soup the owners is real Japanese people, NOT CHINESE so the food is GOOD",
+            "price": 2,
+            "address": "Calle Manuel López Cotilla 2109, Arcos Vallarta, 44130 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.673302,
+                "longitude": -103.381693
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Kimono",
+            "description": "The beef from the tepanyaki is tough and chewy, all smoothie arrived and the yakimeshi with no avocado or Philadelphia, I have seen more shrimp in a maruchan",
+            "price": 4,
+            "address": "Antonio Rojas 2035-Interior 23, San Antonio, 44800 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.660194,
+                "longitude": -103.311910
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Eve Restaurant",
+            "description": "Very good food, good service, and average price of 150 per dish not so cheap and a little expensive to be in the market, but until now its flavor deserves it, the best shrimp ceviche, the shrimp weathered and the dudon, the consome that they give of courtesy of entrance with champiñon, would be better if they gave it, with pasta, the mixed fried rice did not take neither avocado nor cream cheese and the mr. Very burna onda put both and at no cost, in general if I have returned several times",
+            "price": 1,
+            "address": "Calle 2 58, Comercial Abastos, 44530 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.656910,
+                "longitude": -103.381881
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Kumiko",
+            "description": "Delicious sushi and yakimeshi. It was recommended to me and now I highly recommend it",
+            "price": 3,
+            "address": "Montes Urales 1304, Independencia Oriente, 44340 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "c3tgKGq7PB"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.691473,
+                "longitude": -103.326760
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        }
+    ],
+    "burgers": [
+        {
+            "name": "Pig's Pearls",
+            "description": "Modern, industrial-chic restaurant doling out hamburgers, eclectic small plates & craft beer.",
+            "price": 5,
+            "address": "Calle Gral Coronado 79, Col Americana, Zona Centro, 44100 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.677388,
+                "longitude": -103.365108
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Hamburguesas Noel",
+            "description": "This is a nice small crafty burger place on the corner.good service and the burgers are cheap and made with love.the bread is home made.this is no fast food place this is better than McDonald's and cheaper.a mom-pop-burger joint.i liked it a lot.if you like burgers this is the place.",
+            "price": 3,
+            "address": "Calle Bernardo de Balbuena 404, Ladrón de Guevara, Ladron De Guevara, 44600 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.683484,
+                "longitude": -103.372584
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "El Canibal",
+            "description": "First timer. Ordered El Canibal. Burger is delicious. Cooked to order. Full of flavor. I don’t speak Spanish so the staff brought Jorge over (pronounced George). He was so gracious. Even helped me with my Spanish. Great place and atmosphere",
+            "price": 4,
+            "address": "Av de Las Rosas 432, Chapalita Sur, 45046 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.662353,
+                "longitude": -103.400658
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Las Hamburguesas del Oso",
+            "description": "Very good and excellent service highly recommended",
+            "price": 2,
+            "address": "Av. de los Arcos 745, Jardines del Bosque, 44520 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.665916,
+                "longitude": -103.384531
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Gaspar",
+            "description": "Yummmm!! Located in one of the trendy areas of Guadalajara, this restaurant offers mostly American food with a Mexican touch - that's burguers and fries with some Mexican ingredients. The space is modern and welcoming. The crew super polite and nice. And the food was really really good. I will be back! Pics taken with Pixel 4 XL",
+            "price": 3,
+            "address": "Calle Miguel Lerdo de Tejada 2162, Col Americana, Americana, 44130 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.671390,
+                "longitude": -103.371881
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Hamburguesas Al Carbón",
+            "description": "A small place, clean, a little warm, the variety of burgers is limited, the accompaniments or extras are the classics, pineapple bacon, the size is good, the flavor not so much the combination of so many ingredients disguises the flavor of the meat, the price is fair.",
+            "price": 4,
+            "address": "Calz. Revolución 1503, La Loma, 44410 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.659242,
+                "longitude": -103.323206
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "La Hamburguesería Central",
+            "description": "Hamburguesas de un sabor altamente equilibrado, no se satura el gusto por los ingredientes. Podría decir que como oportunidad de mejorar serían unos lugares ligeramente …",
+            "price": 1,
+            "address": "Libertad 1878, Col Americana, Americana, 44160 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.673590,
+                "longitude": -103.366114
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Louie Burger Americana",
+            "description": "Hefty burgers & generous milkshakes dished up in a trendy, industrial-style venture",
+            "price": 5,
+            "address": "Calle Pedro Moreno 1290, Col Americana, Americana, 44160 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.675561,
+                "longitude": -103.363710
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "La Squina Monraz",
+            "description": "Tasty!, I like Sonora hamburger accompanied with a glass of fresh fruit water",
+            "price": 4,
+            "address": "Diagonal Golfo de Cortés 4186, Monraz, 44670 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.681839,
+                "longitude": -103.396157
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Cuarto de Kilo",
+            "description": "Very limited Burger menu; the cooking generates so many carbon dioxide that is intoxicating.  I would not recommend even to work under that conditions to the people there.  I with my family just once and have never returned due to the stark headache that we experience over a few hours later.",
+            "price": 2,
+            "address": "Chapalita, Av San Ignacio 3640, Jardín de San Ignacio, 45040 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.667013,
+                "longitude": -103.403874
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Garfiburger",
+            "description": "The best hamburgers, but keep in mind they no receive credit or debit card, only cash.",
+            "price": 3,
+            "address": "Calle Jaime Nunó 1241, Chapultepec Country, 44620 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.696763,
+                "longitude": -103.364831
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Burger Club",
+            "description": "Good burgers but very very slow service and they forgot the additional ingredients. They often make errors with the check, so take your time to review your ticket.",
+            "price": 2,
+            "address": "44190, Calle Fermín Riestra 1715, Moderna, 44190 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.666502,
+                "longitude": -103.362836
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "La Hamburguesa Feliz",
+            "description": "Excellent home delivery service, good price and very rich, one of the best in the center of gdl",
+            "price": 1,
+            "address": "Calle Sta. Mónica 350, Centro, 44100 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.681796,
+                "longitude": -103.349228
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Berny’s",
+            "description": "Muy ricas las hamburguesas, bien sazonadas y cocinadas. Quizas lo único que recomendaria es que la barra de ingredientes donde te preparas tu hamburguesa, la pudieran",
+            "price": 2,
+            "address": "Av Terranova 591, Prados Providencia, 44670 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.686565,
+                "longitude": -103.387110
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        },
+        {
+            "name": "Hamburguesas Popeye",
+            "description": "Love the place. It is not very crowded but still many people go there for a snack. My favourite are the mega hotdogs. The mega burger is also delicious. Everything is on the grill so the flavor is excellent. The prices are very reasonable and they have a good variety of ingredients.",
+            "price": 5,
+            "address": "Calle Magisterio 1043, La Normal, 44260 Guadalajara, Jal.",
+            "public": true,
+            "category": {
+                "__type": "Pointer",
+                "className": "Category",
+                "objectId": "HrfhIk7otS"
+            },
+            "location": {
+                "__type": "GeoPoint",
+                "latitude": 20.695520,
+                "longitude": -103.349974
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": ""
+            },
+            "image": {
+                "__type": "File",
+                "name": "placeholder.jpeg",
+                "url:": "https://parsefiles.back4app.com/5JVdPjW1EGvauSnR44iuWyJAJOACUC8IUi0S78t9/d0736773c94101af7716d953ad593182_2021-07-19-14-56-40-908.jpg"
+            }
+        }
+    ]
+}
