@@ -1,4 +1,4 @@
-from parse import Place, User
+from parse import User
 import requests as r
 from dotenv import dotenv_values
 from requests.models import HTTPError
