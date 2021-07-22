@@ -23,9 +23,12 @@ class User:
             self.name = user["name"]
             self.createdAt = parser(user["createdAt"])
             self.updatedAt = parser(user["updatedAt"])
-            self.bio = user["bio"]
-            self.profilePicture = Image(user["profilePicture"])
-            self.OneSignal = user["OneSignal"]
+            self.bio = user.get("bio", "")
+            self.OneSignal = user.get("OneSignal", None)
+            try:
+                self.profilePicture = Image(user["profilePicture"])
+            except KeyError:
+                self.profilePicture = None
             
         except KeyError:
             raise ValueError("User could not be created:\n" + str(user))
@@ -50,7 +53,7 @@ class Place:
             # Values
            self.objectId = place["objectId"]
            self.address = place["address"]
-           self.phoneNumber = place["phoneNumber"]
+           self.phoneNumber = place.get("phoneNumber", None)
            self.public = place["public"]
            self.price = place["price"]
            self.name = place["name"]
