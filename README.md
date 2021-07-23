@@ -47,3 +47,5 @@ When this endpoint is called correctly, it will retrieve all the information fro
 
 [Main repository of Places App project](https://github.com/pablo-blancoc/PlacesApp)
 
+[ML repository of Places](https://github.com/pablo-blancoc/PlacesApp-ml)
+
