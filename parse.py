@@ -6,7 +6,7 @@ import requests as r
 from dotenv import dotenv_values
 
 # Constants
-SECRETS = dotenv_values(".env")
+SECRETS = dotenv_values("/Users/Pablo/Desktop/dev/projects/Places/server/.env")
 PARSE_SERVER_URL = SECRETS.get("PARSE_API_ADDRESS")
 HEADERS = {
     "X-Parse-Application-Id": SECRETS.get("PARSE_APP_ID"),

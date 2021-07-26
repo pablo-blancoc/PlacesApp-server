@@ -14,7 +14,7 @@
             "category": {
                 "__type": "Pointer",
                 "className": "Category",
-                "objectId": "cESIVJdndhcESIVJdndh"
+                "objectId": "cESIVJdndh"
             },
             "user": {
                 "__type": "Pointer",
