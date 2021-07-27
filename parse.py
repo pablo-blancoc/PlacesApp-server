@@ -48,7 +48,7 @@ class Image:
 class Place:
     class_name = "Place"
     
-    def __init__(self, place: dict) -> None:
+    def __init__(self, place: dict, simple: bool = False) -> None:
         try:
             # Values
            self.objectId = place["objectId"]
@@ -62,11 +62,12 @@ class Place:
            self.createdAt = parser(place["createdAt"])
            self.updatedAt  = parser(place["updatedAt"])
            
-           # Pointers
-           self.location = GeoPoint(place["location"])
-           self.image = Image(place["image"])
-           self.category = get_category(place["category"]["objectId"])
-           self.user = get_user(place["user"]['objectId'])
+           # Pointers only if not simple
+           if not simple:
+            self.location = GeoPoint(place["location"])
+            self.image = Image(place["image"])
+            self.category = get_category(place["category"]["objectId"])
+            self.user = get_user(place["user"]['objectId'])
             
         except KeyError:
             raise ValueError("Place could not be created:\n" + str(place))
