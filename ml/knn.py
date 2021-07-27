@@ -3,8 +3,6 @@ This file gets all places, likes and users from Parse server so that it can reco
 """
 
 import sys, os
-
-from sklearn.metrics.pairwise import linear_kernel
 sys.path.append(os.path.abspath(os.path.join('..')))
 
 from parse import Place, User
@@ -147,7 +145,7 @@ def create_dataset():
         data.loc[like["place"], like["user"]] = 1
 
     # Convert DataFrame to .csv format
-    data.to_csv('likes.csv', index_label='places')
+    data.to_csv('/Users/Pablo/Desktop/dev/projects/Places/server/ml/likes.csv', index_label='places')
 
 
 def read_data() -> pd.DataFrame:
@@ -156,17 +154,14 @@ def read_data() -> pd.DataFrame:
     Returns:
         pd.DataFrame: All data in order to create the model
     """
-    return pd.read_csv("likes.csv", index_col="places").T
+    return pd.read_csv("/Users/Pablo/Desktop/dev/projects/Places/server/ml/likes.csv", index_col="places").T
     
     
-def get_knn(user: str) -> list:
-    """The list with the 4 closer users to the user that sent the request
-
-    Args:
-        user (str): The user that sent the request
+def create_model() -> NearestNeighbors:
+    """Creates and fits the model to the existing data
 
     Returns:
-        list: The knn neighbors
+        NearestNeighbors: The model fitted ready to predict for a user
     """
     # Get data from .csv
     data = read_data()
@@ -174,38 +169,65 @@ def get_knn(user: str) -> list:
     # Create KNN model
     model = NearestNeighbors(metric='cosine', n_neighbors=5, algorithm='brute', n_jobs=-1)
     model.fit(data)
+    
+    return model
+
+
+def kNearestNeighbors() -> pd.DataFrame:
+    """Get a DataFrame with the K nearest neighbors for each user
+    
+    Returns:
+        pd.DataFrame: The KNN for each user so that it can be compared and recommend a place
+    """
+    data = read_data()
+    model = create_model()
 
     # Get top k neighbors indexes
     # Get knn uids from indexes
     top_k_users = model.kneighbors(data, return_distance=False)
     neighbors = pd.DataFrame(np.array(top_k_users))
-    knn_index = list(neighbors.iloc[list(data.index).index(user)][1:])
-    knn = [list(data.index)[x] for x in knn_index]
     
-    return knn
+    return neighbors
 
 
-# create_dataset()
-def recommend(user: str) -> str:
+def recommend(neighbors: pd.DataFrame, data: pd.DataFrame, user: str) -> list:
     """Recommends a place to a user according to similar users
 
     Args:
         user (str): The user id of the one making the request
+        neighbors (DataFrame): The knn of each user
+        data (DataFrame): The whole data
 
     Returns:
-        str: The objectId of the place that is going to be recommended to it
+        list: The top 5 items (or less) to recommend to the user
     """
-    knn = get_knn(user)
-    liked_by_me = get_likes(user, only_place=True)
+    # Get the 4 users that relate most to the user
+    knn_index = list(neighbors.iloc[list(data.index).index(user)][1:])
+    knn = [list(data.index)[x] for x in knn_index]
+    
+    # Get places the user has liked
+    liked_by_user = []
+    for index, value in data.loc[user, :].items():
+        if value == 1:
+            liked_by_user.append(index)
+    
+    # Get places liked by related users
     liked = []
     for _user in knn:
-        _liked = get_likes(_user, only_place=True)
-        for _place in _liked:
-            if len(liked) == 5:
-                break
-            
-            if _place not in liked_by_me and _place not in liked:
-                liked.append(_place)
+        
+        # Find a place that the user hasn't liked and add it to the list
+        for index, value in data.loc[_user, :].items():
+            if value == 1 and index not in liked_by_user and len(liked) < 5:
+                liked.append(index)
+        
+    # If no place to recommend then choose random        
+    while len(liked) == 0:
+        _place = random.choice(data.columns)
+        if _place not in liked_by_user:
+            liked.append(_place)
+        
+    return liked
 
-print(recommend("7z7dXts3aC"))
-
+neighbors = kNearestNeighbors()
+places = recommend(neighbors, read_data(), "7z7dXts3aC")
+print(places)

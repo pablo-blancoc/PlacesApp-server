@@ -1,14 +1,17 @@
+from sklearn import neighbors
 import parse as parse_server
 import one_signal
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from dotenv import dotenv_values
 from functools import wraps
+import ml.knn as knn
 
 app = Flask(__name__)
 CORS(app)
 SECRETS = dotenv_values(".env")
-
+KNN_NEIGHBORS = knn.kNearestNeighbors()
+KNN_DATA = knn.read_data()
 
 def api_key_required(f):
     """
@@ -49,6 +52,7 @@ def test():
 
 
 @app.route('/push', methods=['GET'])
+@api_key_required
 def notify():
     """
     Send a push notification to all users suscribed to the user sent with the place that was just posted by it
@@ -77,6 +81,25 @@ def notify():
     print(f"Sent {len(toUsers)} notifications!")
     
     return jsonify({"status": "ok"}), 200
+
+
+@app.route('/recommend', methods=['GET'])
+@api_key_required
+def topK():
+    """
+    Gets 5 places (or less) to recommend to a specific user
+    """
+    global KNN_NEIGHBORS, KNN_DATA
+    
+    try:
+        userId = request.args["user"]
+    except KeyError:
+        return "User not found on the request", 400
+    
+    # Get the list of 5 recommendations for the user
+    places = knn.recommend(neighbors=KNN_NEIGHBORS, data=KNN_DATA, user=userId)
+    
+    return jsonify({"places": places}), 200
 
 
 if __name__ == '__main__':
