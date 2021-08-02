@@ -78,7 +78,7 @@ def read_all_places():
     """
     Reads all places from json file and creates dict object containing them
     """
-    places_file = "places.json"
+    places_file = "/Users/Pablo/Desktop/dev/projects/Places/server/ml/places.json"
     data = {}
     
     with open(places_file) as file:
@@ -315,5 +315,3 @@ def search(query: str) -> list:
         results.append(places[id]["id"])
         
     return results
-
-print(search("best cantina drinks"))

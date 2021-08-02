@@ -1,4 +1,3 @@
-from sklearn import neighbors
 import parse as parse_server
 import one_signal
 from flask import Flask, request, jsonify
@@ -6,6 +5,8 @@ from flask_cors import CORS
 from dotenv import dotenv_values
 from functools import wraps
 import ml.knn as knn
+import ml.tfidf as tfidf
+from urllib.parse import unquote
 
 app = Flask(__name__)
 CORS(app)
@@ -98,6 +99,23 @@ def topK():
     
     # Get the list of 5 recommendations for the user
     places = knn.recommend(neighbors=KNN_NEIGHBORS, data=KNN_DATA, user=userId)
+    
+    return jsonify({"places": places}), 200
+
+
+@app.route('/search', methods=['GET'])
+def search_places():
+    """
+    Get top 10 places for search using tf-idf algorithm
+    """
+    
+    try:
+        query = unquote(request.args["query"])
+    except KeyError:
+        return "Query not found", 400
+    
+    # Get top places for query
+    places = tfidf.search(query=query)
     
     return jsonify({"places": places}), 200
 
