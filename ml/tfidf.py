@@ -32,7 +32,7 @@ from nltk.corpus import wordnet
 
 # Constants
 lemmatizer = WordNetLemmatizer()
-SECRETS = dotenv_values("/Users/Pablo/Desktop/dev/projects/Places/server/.env")
+SECRETS = dotenv_values("/Users/pabloblanco/Desktop/Places/server/.env")
 PARSE_SERVER_URL = SECRETS.get("PARSE_API_ADDRESS")
 HEADERS = {
     "X-Parse-Application-Id": SECRETS.get("PARSE_APP_ID"),
@@ -78,7 +78,7 @@ def read_all_places():
     """
     Reads all places from json file and creates dict object containing them
     """
-    places_file = "/Users/Pablo/Desktop/dev/projects/Places/server/ml/places.json"
+    places_file = "/Users/pabloblanco/Desktop/Places/server/ml/places.json"
     data = {}
     
     with open(places_file) as file:

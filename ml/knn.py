@@ -17,7 +17,7 @@ import numpy as np
 from sklearn.neighbors import NearestNeighbors
 
 # Constants
-SECRETS = dotenv_values("/Users/Pablo/Desktop/dev/projects/Places/server/.env")
+SECRETS = dotenv_values("/Users/pabloblanco/Desktop/Places/server/.env")
 PARSE_SERVER_URL = SECRETS.get("PARSE_API_ADDRESS")
 HEADERS = {
     "X-Parse-Application-Id": SECRETS.get("PARSE_APP_ID"),
@@ -145,7 +145,7 @@ def create_dataset():
         data.loc[like["place"], like["user"]] = 1
 
     # Convert DataFrame to .csv format
-    data.to_csv('/Users/Pablo/Desktop/dev/projects/Places/server//ml/likes.csv', index_label='places')
+    data.to_csv('/Users/pabloblanco/Desktop/Places/server/ml/likes.csv', index_label='places')
 
 
 def read_data() -> pd.DataFrame:
@@ -154,7 +154,7 @@ def read_data() -> pd.DataFrame:
     Returns:
         pd.DataFrame: All data in order to create the model
     """
-    return pd.read_csv("/Users/Pablo/Desktop/dev/projects/Places/server/ml/likes.csv", index_col="places").T
+    return pd.read_csv("/Users/pabloblanco/Desktop/Places/server/ml/likes.csv", index_col="places").T
     
     
 def create_model() -> NearestNeighbors:

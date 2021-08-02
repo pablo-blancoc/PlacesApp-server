@@ -104,6 +104,7 @@ def topK():
 
 
 @app.route('/search', methods=['GET'])
+@api_key_required
 def search_places():
     """
     Get top 10 places for search using tf-idf algorithm
