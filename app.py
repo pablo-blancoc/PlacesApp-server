@@ -115,8 +115,8 @@ def search_places():
     except KeyError:
         return "Query not found", 400
     
-    # Get top places for query
-    places = tfidf.search(query=query)
+    # Get top places for query using cosine similarity
+    places = tfidf.cosine_search(query=query)
     
     return jsonify({"places": places}), 200
 

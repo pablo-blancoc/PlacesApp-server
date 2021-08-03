@@ -15,6 +15,7 @@ from dotenv import dotenv_values
 from parse import Place
 
 import numpy as np
+import pandas as pd
 
 import nltk
 
@@ -31,7 +32,7 @@ stop_words_es = set(stopwords.words('spanish'))
 from nltk.corpus import wordnet
 
 # Constants
-lemmatizer = WordNetLemmatizer()
+LEMMATIZER = WordNetLemmatizer()
 SECRETS = dotenv_values("/Users/pabloblanco/Desktop/Places/server/.env")
 PARSE_SERVER_URL = SECRETS.get("PARSE_API_ADDRESS")
 HEADERS = {
@@ -125,6 +126,8 @@ def preprocess_sentence(sentence: str) -> list:
     Returns:
         list: [description]
     """
+    global LEMMATIZER
+    
     tokens = word_tokenize(sentence)
     words = nltk.pos_tag(tokens)
 
@@ -152,7 +155,7 @@ def preprocess_sentence(sentence: str) -> list:
         if pos is None:
             continue
 
-        word = lemmatizer.lemmatize(word, pos)
+        word = LEMMATIZER.lemmatize(word, pos)
 
         final.append(word)
 
@@ -168,11 +171,11 @@ def doc_freq(word: str) -> int:
     Returns:
         int: The document frequency of that word
     """
-    global df
+    global DF
 
     freq = 0
     try:
-        freq = df[word]
+        freq = DF[word]
     except KeyError:
         pass
     return freq
@@ -187,7 +190,7 @@ def matching_score(query: str) -> list:
     Returns:
         list: The list of places that match the query
     """
-    global tf_idf
+    global TF_IDF
 
     # Preprocess the query
     tokens = preprocess_sentence(query)
@@ -195,14 +198,14 @@ def matching_score(query: str) -> list:
     query_weights = {}
 
     # For each word in each document
-    for key in tf_idf:
+    for key in TF_IDF:
 
         # If word in query, add document's value to query_weights
         if key[1] in tokens:
             try:
-                query_weights[key[0]] += tf_idf[key]
+                query_weights[key[0]] += TF_IDF[key]
             except:
-                query_weights[key[0]] = tf_idf[key]
+                query_weights[key[0]] = TF_IDF[key]
 
     # Sort the weights to get highers on top
     query_weights = sorted(query_weights.items(), key=lambda x: x[1], reverse=True)
@@ -215,32 +218,78 @@ def matching_score(query: str) -> list:
     return results
 
 
+def gen_vector(text: str) -> list:
+    """Creates a vector from each sentence that indicates the tf-idf of the words on that sentence
+
+    Args:
+        text (str): The sentence to convert to a N dimensional vector
+
+    Returns:
+        list: The resulting vector
+    """
+
+    tokens = preprocess_sentence(text)
+    
+    V = np.zeros((len(total_vocab)))
+    
+    counter = Counter(tokens)
+    words_count = total_vocab_size
+    
+    for token in np.unique(tokens):
+        
+        tf = counter[token]/words_count
+        df = doc_freq(token)
+        idf = np.log((N)/(df+1))
+
+        try:
+            index = total_vocab.index(token)
+            V[index] = tf*idf
+        except:
+            pass
+        
+    return V
+
+
+def cosine_similarity(a: np.array, b: np.array) -> float:
+    """Calculates the cosine similarity of 2 vectors. 
+          Using the formula of dot product of them divided between the multiplication of their norms
+
+    Args:
+        a (np.array): Vector 01
+        b (np.array): Vector 01
+
+    Returns:
+        float: The cosine similarity between them. Its range is (0, 1) inclusive
+    """
+    return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
+
+
 # Get all places and preprocess them
-places = read_all_places()
-for place in places:
+PLACES = read_all_places()
+for place in PLACES:
     place["name"] = preprocess_sentence(place["name"])
     place["description"] = preprocess_sentence(place["description"])
 
 
 # Create dictionary of document frequency with ids of documents
-df = {}
-for i in range(len(places)):
-    tokens = places[i]["description"]
-    tokens.extend(places[i]["name"])
+DF = {}
+for i in range(len(PLACES)):
+    tokens = PLACES[i]["description"]
+    tokens.extend(PLACES[i]["name"])
     for w in tokens:
         try:
-            df[w].add(i)
+            DF[w].add(i)
         except KeyError:
-            df[w] = {i}
+            DF[w] = {i}
 
 # Get only the frequency of appearance of each word
-for word in df.keys():
-    df[word] = len(df[word])
+for word in DF.keys():
+    DF[word] = len(DF[word])
 
 # Create variables neccessary for tf-idf
-total_vocab = df.keys()
+total_vocab = DF.keys()
 total_vocab_size = len(total_vocab)
-N = len(places)
+N = len(PLACES)
 
 # Create variables to store tf-idf values of each word in both, title and text
 # Alpha is set to 0.3 as words in title will be more valuable (0.7) than words in description (0.3)
@@ -249,9 +298,9 @@ tf_idf_title = {}
 alpha = 0.3
 
 # for each place calculate tf-idf for description
-for i, place in enumerate(places):
+for i, place in enumerate(PLACES):
 
-    # get tokens of that place
+    # get tokens of that place's description
     tokens = place["description"]
 
     # get word counts per document and total words
@@ -268,12 +317,9 @@ for i, place in enumerate(places):
         idf = np.log(N/(doc_freq(token)+1))
 
         tf_idf_text[i, token] = tf*idf * alpha
-
-
-# for each place calculate tf-idf for title
-for i, place in enumerate(places):
-
-    # get tokens of that place
+        
+        
+    ### REPEAT PROCESS FOR NAME
     tokens = place["name"]
 
     # get word counts per document and total words
@@ -293,14 +339,26 @@ for i, place in enumerate(places):
 
 
 # Create total tf_idf of all words of all documents
-tf_idf = {}
+TF_IDF = {}
 for key in tf_idf_text.keys():
-    tf_idf[key] = tf_idf_text[key] + tf_idf_title.pop(key, 0)
+    TF_IDF[key] = tf_idf_text[key] + tf_idf_title.pop(key, 0)
 for key in tf_idf_title.keys():
-    tf_idf[key] = tf_idf_title.get(key, 0)
+    TF_IDF[key] = tf_idf_title.get(key, 0)
+    
+
+# create dataframe with tf-idf of each word/place
+matrix = np.zeros((N, total_vocab_size))
+for word in TF_IDF:
+    try:
+        index = total_vocab.index(word[1])
+        matrix[word[0]][index] = TF_IDF[word]
+    except:
+        pass
+DATAFRAME = pd.DataFrame(matrix)
 
 
-def search(query: str) -> list:
+
+def matching_score_search(query: str) -> list:
     """Performs the search inside all the places
 
     Args:
@@ -309,11 +367,40 @@ def search(query: str) -> list:
     Returns:
         list: The list of places as a result
     """
-    global places
+    global PLACES
 
     results = []
     places_ids = matching_score(query)
     for id in places_ids:
-        results.append(places[id]["id"])
+        results.append(PLACES[id]["id"])
 
     return results
+
+
+def cosine_search(query: str) -> list:
+    """Performs search on all places using the cosine similarity algorithm along with tf-idf algorithm
+
+    Args:
+        query (str): The text introduced by the user
+
+    Returns:
+        list: The top 10 places that match that query
+    """
+    global DATAFRAME
+    
+    # Create list to store cosine similarity results
+    d_cosines = []
+    
+    # Create vector out of query sentence
+    query_vector = gen_vector(query)
+    
+    # Calculate cosine similarity of query vector to each place's vector
+    for _, row in DATAFRAME.iterrows():
+        d_cosines.append(cosine_similarity(np.array(query_vector), np.array(row)))
+        
+    # Get top 10 similar places
+    out = np.array(d_cosines).argsort()
+    out = out[::-1][:10]
+    
+
+    return [DATAFRAME.index[x] for x in out]
