@@ -127,7 +127,7 @@ def preprocess_sentence(sentence: str) -> list:
         list: [description]
     """
     global LEMMATIZER
-    
+
     tokens = word_tokenize(sentence)
     words = nltk.pos_tag(tokens)
 
@@ -227,16 +227,17 @@ def gen_vector(text: str) -> list:
     Returns:
         list: The resulting vector
     """
+    global total_vocab, total_vocab_size, N
 
     tokens = preprocess_sentence(text)
-    
-    V = np.zeros((len(total_vocab)))
-    
+
+    V = np.zeros((total_vocab_size))
+
     counter = Counter(tokens)
     words_count = total_vocab_size
-    
+
     for token in np.unique(tokens):
-        
+
         tf = counter[token]/words_count
         df = doc_freq(token)
         idf = np.log((N)/(df+1))
@@ -246,12 +247,12 @@ def gen_vector(text: str) -> list:
             V[index] = tf*idf
         except:
             pass
-        
+
     return V
 
 
 def cosine_similarity(a: np.array, b: np.array) -> float:
-    """Calculates the cosine similarity of 2 vectors. 
+    """Calculates the cosine similarity of 2 vectors.
           Using the formula of dot product of them divided between the multiplication of their norms
 
     Args:
@@ -261,7 +262,8 @@ def cosine_similarity(a: np.array, b: np.array) -> float:
     Returns:
         float: The cosine similarity between them. Its range is (0, 1) inclusive
     """
-    return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
+    cos_sim = np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
+    return cos_sim
 
 
 # Get all places and preprocess them
@@ -272,8 +274,9 @@ for place in PLACES:
 
 
 # Create dictionary of document frequency with ids of documents
+N = len(PLACES)
 DF = {}
-for i in range(len(PLACES)):
+for i in range(N):
     tokens = PLACES[i]["description"]
     tokens.extend(PLACES[i]["name"])
     for w in tokens:
@@ -287,9 +290,8 @@ for word in DF.keys():
     DF[word] = len(DF[word])
 
 # Create variables neccessary for tf-idf
-total_vocab = DF.keys()
+total_vocab = list(DF.keys())
 total_vocab_size = len(total_vocab)
-N = len(PLACES)
 
 # Create variables to store tf-idf values of each word in both, title and text
 # Alpha is set to 0.3 as words in title will be more valuable (0.7) than words in description (0.3)
@@ -317,8 +319,8 @@ for i, place in enumerate(PLACES):
         idf = np.log(N/(doc_freq(token)+1))
 
         tf_idf_text[i, token] = tf*idf * alpha
-        
-        
+
+
     ### REPEAT PROCESS FOR NAME
     tokens = place["name"]
 
@@ -344,9 +346,9 @@ for key in tf_idf_text.keys():
     TF_IDF[key] = tf_idf_text[key] + tf_idf_title.pop(key, 0)
 for key in tf_idf_title.keys():
     TF_IDF[key] = tf_idf_title.get(key, 0)
-    
 
-# create dataframe with tf-idf of each word/place
+
+# create matrix with tf-idf of each word/place
 matrix = np.zeros((N, total_vocab_size))
 for word in TF_IDF:
     try:
@@ -354,8 +356,11 @@ for word in TF_IDF:
         matrix[word[0]][index] = TF_IDF[word]
     except:
         pass
-DATAFRAME = pd.DataFrame(matrix)
 
+# create dataframe and set index to place's objectId
+DATAFRAME = pd.DataFrame(matrix)
+DATAFRAME["objectId"] = pd.Series([x["id"] for x in PLACES])
+DATAFRAME = DATAFRAME.set_index("objectId", drop=True)
 
 
 def matching_score_search(query: str) -> list:
@@ -387,20 +392,19 @@ def cosine_search(query: str) -> list:
         list: The top 10 places that match that query
     """
     global DATAFRAME
-    
+
     # Create list to store cosine similarity results
     d_cosines = []
-    
+
     # Create vector out of query sentence
     query_vector = gen_vector(query)
-    
+
     # Calculate cosine similarity of query vector to each place's vector
     for _, row in DATAFRAME.iterrows():
         d_cosines.append(cosine_similarity(np.array(query_vector), np.array(row)))
-        
+
     # Get top 10 similar places
     out = np.array(d_cosines).argsort()
     out = out[::-1][:10]
-    
 
     return [DATAFRAME.index[x] for x in out]
