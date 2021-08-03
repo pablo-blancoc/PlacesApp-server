@@ -3,6 +3,8 @@ This file gets all places, likes and users from Parse server so that it can reco
 """
 
 import sys, os
+
+from pandas.core.frame import DataFrame
 sys.path.append(os.path.abspath(os.path.join('..')))
 
 from parse import Place, User
@@ -157,15 +159,15 @@ def read_data() -> pd.DataFrame:
     return pd.read_csv("/Users/pabloblanco/Desktop/Places/server/ml/likes.csv", index_col="places").T
     
     
-def create_model() -> NearestNeighbors:
+def create_model(data: DataFrame) -> NearestNeighbors:
     """Creates and fits the model to the existing data
+    
+    Args:
+        data (DataFrame): All the data in order to create KNN model
 
     Returns:
         NearestNeighbors: The model fitted ready to predict for a user
     """
-    # Get data from .csv
-    data = read_data()
-    
     # Create KNN model
     model = NearestNeighbors(metric='cosine', n_neighbors=5, algorithm='brute', n_jobs=-1)
     model.fit(data)
@@ -180,7 +182,7 @@ def kNearestNeighbors() -> pd.DataFrame:
         pd.DataFrame: The KNN for each user so that it can be compared and recommend a place
     """
     data = read_data()
-    model = create_model()
+    model = create_model(data=data)
 
     # Get top k neighbors indexes
     # Get knn uids from indexes
