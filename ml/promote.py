@@ -28,7 +28,7 @@ HEADERS = {
     }
 
 # Read data
-DATA = pd.read_csv("likes.csv", index_col="places")
+DATA = pd.read_csv("/Users/pabloblanco/Desktop/Places/server/ml/likes.csv", index_col="places")
 
 # Create KNN model and train it
 MODEL = NearestNeighbors(metric='cosine', n_neighbors=11, algorithm='brute', n_jobs=-1)
