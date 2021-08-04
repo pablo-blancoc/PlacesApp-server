@@ -1,3 +1,4 @@
+import ml.promote as promote
 import parse as parse_server
 import one_signal
 from flask import Flask, request, jsonify
@@ -119,6 +120,24 @@ def search_places():
     places = tfidf.cosine_search(query=query)
     
     return jsonify({"places": places}), 200
+
+
+@app.route('/promote', methods=['GET'])
+@api_key_required
+def promote_place():
+    """
+    Promote the place given to the top 5 people that might like it
+    """
+    
+    try:
+        place = request.args["place"]
+    except KeyError:
+        return "Place not found", 400
+    
+    # Get top places for query using cosine similarity
+    places = promote.promote(place=place)
+    
+    return jsonify({"status": "ok"}), 200
 
 
 if __name__ == '__main__':
