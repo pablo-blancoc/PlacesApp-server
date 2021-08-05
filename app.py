@@ -131,13 +131,17 @@ def promote_place():
     
     try:
         place = request.args["place"]
+        user = request.args["user"]
     except KeyError:
         return "Place not found", 400
     
     # Get top places for query using cosine similarity
-    places = promote.promote(place=place)
+    flag = promote.promote(place=place, user=user)
     
-    return jsonify({"status": "ok"}), 200
+    if flag:
+        return jsonify({"status": "ok"}), 200
+    else:
+        return jsonify({"status": "bad"}), 400
 
 
 if __name__ == '__main__':

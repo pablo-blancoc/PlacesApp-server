@@ -64,11 +64,15 @@ def get_best_users(place: str) -> list:
     return best_users
 
 
-def promote(place: str) -> None:
+def promote(place: str, user: str) -> bool:
     """Promotes a place given
 
     Args:
         place (str): The place to promote
+        user (str): The user that is making the promotion
+        
+    Returns:
+        bool: if promotion was succesfull
     """
     # Set url
     url = PARSE_SERVER_URL + "/parse/classes/Promotion"
@@ -86,11 +90,15 @@ def promote(place: str) -> None:
         "user": {
             "__type": "Pointer",
             "className": "_User",
-            "objectId": ""
-        }
+            "objectId": user
+        },
+        "viewed": 0,
+        "sent": len(users),
+        "clicked": 0
     }
+    response = r.post(url, data=json.dumps(promotion), headers=HEADERS)
+    if not 200 <= response.status_code <= 299:
+        return False
     
-    for user in users:
-        promotion['user']['objectId'] = user
-        response = r.post(url, data=json.dumps(promotion), headers=HEADERS)
-        print(f"{response.status_code}: {user}")
+    print(response.json())
+
