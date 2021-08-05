@@ -2,9 +2,9 @@
 -- How the recommend algorithm works?
 
 1. First we use knn algorithm to get the 10 most similar places (according to likes, which means it is based on user preferences).
-2. After getting the 10 most similar places, we rank all users in order from who has liked the most out of those 10 places, 
+2. After getting the 10 most similar places, we rank all users in order from who has liked the most out of those 10 places,
     and select the top 5 users.
-3. This means that at the end, we have found the users that are most probable to liking the place to recommend because 
+3. This means that at the end, we have found the users that are most probable to liking the place to recommend because
     they have liked the most out of the 10 most similar places to it.
 """
 
@@ -52,16 +52,22 @@ def get_best_users(place: str, user: str) -> list:
 
     # Get the 10 places that are most similar to the place passed
     knn = [list(DATA.index)[x] for x in list(neighbors.iloc[list(DATA.index).index(place)][1:])]
-    
+
     # Get the information of the likes of all users on those 10 places
     likes = DATA.loc[knn, :]
-    
+
     # Sum all likes per user on those 10 places
     likes_per_user = likes.astype(bool).sum(axis=0)
-    
+
     # Rank the users in order of how many likes the have given, and get the top 5
-    best_users = list(likes_per_user.sort_values(ascending=False).index).remove(user)
-    
+    best_users = list(likes_per_user.sort_values(ascending=False).index)
+
+    # Remove user that create the promotion
+    try:
+        best_users.remove(user)
+    except:
+        pass
+
     return best_users[:5]
 
 
@@ -71,16 +77,16 @@ def promote(place: str, user: str) -> bool:
     Args:
         place (str): The place to promote
         user (str): The user that is making the promotion
-        
+
     Returns:
         bool: if promotion was succesfull
     """
     # Set url
     url = PARSE_SERVER_URL + "/parse/classes/Promotion"
-    
+
     # Gets users to promote to
     users = get_best_users(place=place, user=user)
-    
+
     # Create Promotion class object
     promotion = {
         "place": {
@@ -100,6 +106,26 @@ def promote(place: str, user: str) -> bool:
     response = r.post(url, data=json.dumps(promotion), headers=HEADERS)
     if not 200 <= response.status_code <= 299:
         return False
-    
-    print(response.json())
 
+    # Send the actual promotions
+    promotionId = response.json()["objectId"]
+    url = PARSE_SERVER_URL + "/parse/classes/PendingPromotion"
+    for user in users:
+        promotion = {
+            "promotion": {
+                "__type": "Pointer",
+                "className": "Promotion",
+                "objectId": promotionId
+            },
+            "user": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": user
+            }
+        }
+        response = r.post(url, data=json.dumps(promotion), headers=HEADERS)
+        if not 200 <= response.status_code <= 299:
+            print(f"[FAILED] Promotion on user: {user}")
+
+
+    return True
