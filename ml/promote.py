@@ -38,11 +38,12 @@ MODEL.fit(DATA)
 neighbors = pd.DataFrame(np.array(MODEL.kneighbors(DATA, return_distance=False)))
 
 
-def get_best_users(place: str) -> list:
+def get_best_users(place: str, user: str) -> list:
     """Gets a list of the 5 best users to promote a place given
 
     Args:
         place (str): The objectId of the place given
+        user (str): The objectId of the user that created the promotion
 
     Returns:
         list: A list that contains the 5 users that are the best to promote a place to
@@ -59,7 +60,7 @@ def get_best_users(place: str) -> list:
     likes_per_user = likes.astype(bool).sum(axis=0)
     
     # Rank the users in order of how many likes the have given, and get the top 5
-    best_users = list(likes_per_user.sort_values(ascending=False).index)[:5]
+    best_users = list(likes_per_user.sort_values(ascending=False).index).remove(user)[:5]
     
     return best_users
 
@@ -78,7 +79,7 @@ def promote(place: str, user: str) -> bool:
     url = PARSE_SERVER_URL + "/parse/classes/Promotion"
     
     # Gets users to promote to
-    users = get_best_users()
+    users = get_best_users(place=place, user=user)
     
     # Create Promotion class object
     promotion = {
