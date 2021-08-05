@@ -60,12 +60,9 @@ def get_best_users(place: str, user: str) -> list:
     likes_per_user = likes.astype(bool).sum(axis=0)
     
     # Rank the users in order of how many likes the have given, and get the top 5
-    best_users = list(likes_per_user.sort_values(ascending=False).index)
-    print(best_users)
-    best_users.remove(user)[:5]
-    print(best_users)
+    best_users = list(likes_per_user.sort_values(ascending=False).index).remove(user)
     
-    return best_users
+    return best_users[:5]
 
 
 def promote(place: str, user: str) -> bool:
